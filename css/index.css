@@ -1,3 +1,25 @@
+.buttoned {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #22283A;
+}
+.btn:hover {
+  background-color: white;
+  color: #22283A;
+}
+.bg-size {
+  background-size: auto;
+}
+.border-btn {
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+}
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -175,17 +197,17 @@ nav a {
   font-size: 1.6rem;
   padding-left: 43px;
   text-decoration: none;
-  color: #22283B;
+  color: #23293B;
   font-weight: normal;
 }
 .container h1,
 nav {
   display: flex;
   justify-content: center;
-  background: #f4f4f4;
-  background-repeat: repeat-x;
+  background: #F6F6F6;
   width: 100%;
   padding: 10px 0;
+  background-size: auto;
 }
 footer {
   color: #22283B;
@@ -238,6 +260,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #22283A;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
 }
 .home .walk .walk-img {
   width: 46%;

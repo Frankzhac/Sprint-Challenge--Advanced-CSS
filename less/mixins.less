@@ -1,15 +1,28 @@
 // Mixins Here
-.coloredNav {
-   color: #f4f4f4;
-}
+
 
 .buttoned {
-  background-color: #22283A;
-  border: none;
-  color: white;
-  padding: 15px 32px;
+	font-size: 2rem;
+	display: inline-block;
+  margin: 4px 2px;
+  padding: 10px 27px;
   text-align: center;
   text-decoration: none;
-  margin-left: 0;
-  font-size: 2rem;
+  color: white;
+  background-color: @btn-bg-color;
+}
+
+.buttoned:hover {
+  background-color: white;
+  color: #22283A;
+}
+
+.bg-size {
+  background-size: auto;
+}
+
+.border-btn {
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
 }
