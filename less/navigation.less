@@ -27,3 +27,46 @@ nav a {
   padding: 10px 0;
   .bg-size();
 }
+
+// Phone here
+
+nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: @ebony-clay;
+  font-weight: normal;
+
+  @media @phone {
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+}
+
+.container h1, nav {
+  display: flex;
+  justify-content: center;
+  background: @wild-sand;
+  width: 100%;
+  padding: 10px 0;
+  .bg-size();
+
+    @media @phone {
+    flex-direction: column;
+    align-items: center
+  }
+
+.space-images {
+  @media @phone {
+    flex-direction: column;
+  }
+}
+
+  .intro {
+    display: flex;
+    font-size: 3rem;
+    flex-direction: column;
+
+    @media @phone {
+      flex-direction: column;
+}

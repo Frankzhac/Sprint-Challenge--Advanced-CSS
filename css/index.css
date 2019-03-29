@@ -8,7 +8,7 @@
   color: white;
   background-color: #22283A;
 }
-.btn:hover {
+.buttoned:hover {
   background-color: white;
   color: #22283A;
 }
@@ -273,6 +273,10 @@ footer {
   border: none;
   border-radius: 8px;
   box-shadow: none;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
