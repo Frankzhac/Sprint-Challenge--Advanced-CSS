@@ -11,62 +11,23 @@ h1 {
   font-size: 4rem;
 }
 
-nav a {
-  font-size: 1.6rem;
-  padding-left: 43px;
-  text-decoration: none;
-  color: @ebony-clay;
-  font-weight: normal;
-}
-
 .container h1, nav {
   display: flex;
   justify-content: center;
   background: @wild-sand;
   width: 100%;
   padding: 10px 0;
-  .bg-size();
-}
 
-// Phone here
+  a {
+    font-size: 1.6rem;
+    padding-left: 43px;
+    text-decoration: none;
+    color: @ebony-clay;
+    font-weight: normal;
 
-nav a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: @ebony-clay;
-  font-weight: normal;
-
-  @media @phone {
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding-left: 10px;
-  }
-}
-
-.container h1, nav {
-  display: flex;
-  justify-content: center;
-  background: @wild-sand;
-  width: 100%;
-  padding: 10px 0;
-  .bg-size();
-
-    @media @phone {
-    flex-direction: column;
-    align-items: center
+    @media @mobile{
+      padding-left: 20px;
+    }
   }
 
-.space-images {
-  @media @phone {
-    flex-direction: column;
-  }
-}
-
-  .intro {
-    display: flex;
-    font-size: 3rem;
-    flex-direction: column;
-
-    @media @phone {
-      flex-direction: column;
 }

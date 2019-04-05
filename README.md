@@ -34,7 +34,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-  In an adaptive website, templates are optimized for each device whereas in a responsive website one template works for all devices.
+  Responsive layouts combine features of fixed, adaptive, and fluid websites together into one seamless experience whereas an adaptive layouts borrow from the speed of a fixed layout but accommodate different devices at specific breakpoints in design.
+  An adaptive website is usually deployed quickly for specific devices but fully responsive websites accommodate thousands of devices and takes longer to build.
 
 2. Describe what it means to be mobile first vs desktop first.
 
@@ -42,11 +43,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-   It translates rem units to default browser font-size 10 or 16px.
+   It converts default browser px to rem /*(10/16)*100 = 62.5%)*/ ie: 16px= 1.6rem.
 
 4. How would you describe preprocessing to someone new to CSS?
 
-   It is a syntax that compiles CSS code.
+   It is a more robust syntax for CSS written in a different language. That syntax compiles code to CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 

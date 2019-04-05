@@ -1,19 +1,19 @@
 // Mixins Here
 
 
-.buttoned {
+.buttoned(@t-align, @btn-bg-color) {
 	font-size: 2rem;
 	display: inline-block;
   margin: 4px 2px;
   padding: 10px 27px;
-  text-align: center;
+  text-align: @t-align;
   text-decoration: none;
   color: white;
   background-color: @btn-bg-color;
 
 		&:hover {
 			background-color: white;
-		  color: #22283A;
+		  color: @btn-bg-color;
 		}
 }
 
@@ -21,8 +21,8 @@
   background-size: auto;
 }
 
-.border-btn {
+.border-btn(@radius) {
   border: none;
-  border-radius: 8px;
+  border-radius: @radius;
   box-shadow: none;
 }
