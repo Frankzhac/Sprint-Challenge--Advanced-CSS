@@ -139,3 +139,69 @@
     }
   }
 }// home
+/* contact starte here! */
+.contact {
+  margin-top: 20px;
+  @media @mobile {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    margin-top: 20px;
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+.contact p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: black;
+  @media @mobile {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+input {
+  margin: 15px 0 15px 10px;
+  padding-bottom: 10px;
+  @media @mobile {
+    width: 45%;
+    margin: 10px 10px 10px 5px;
+    padding-bottom: 0;
+  }
+}
+label {
+  font-size: 1.5rem;
+  color: black;
+}
+
+textarea {
+  width: 80%
+}
+
+input[type=submit] {
+  font-size: 2rem;
+	display: inline-block;
+  margin: 4px 2px;
+  margin-bottom: 60px;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #22283A;
+  .border-btn(8px);
+  @media @mobile {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+		&:hover {
+			background-color: white;
+		  color: #22283A;
+		}
+}
