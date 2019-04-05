@@ -311,15 +311,32 @@ footer {
   background-color: white;
   color: #22283A;
 }
+@media ( max-width: 500px) {
+  .home .walk .walk-text .btn {
+    font-size: 2rem;
+    display: inline-block;
+    width: 100%;
+    margin: 4px 2px;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #22283A;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: white;
+    color: #22283A;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-  order: -1;
 }
 @media ( max-width: 500px) {
   .home .walk .walk-img {
     width: 98%;
     margin: 0 auto;
+    order: -1;
   }
 }
 .home .walk .walk-img img {
