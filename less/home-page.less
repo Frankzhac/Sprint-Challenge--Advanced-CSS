@@ -11,7 +11,13 @@
     p {
       padding:0 15px;
     }
-  
+
+    @media @mobile {
+      img {
+        width: 100%;
+      }
+    }
+
   }
 
   .space-images {
@@ -24,11 +30,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        display: none;
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
+
+    img {
+      display: none;
+    }
 
     h3 {
       margin-top: 11px;
@@ -36,6 +50,17 @@
 
     p {
       margin-top: 13px;
+    }
+
+    @media @mobile {
+      img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        height: 100%;
+
+      }
     }
   }
 
@@ -46,25 +71,66 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      padding: 15px;
+    }
+
     .walk-text {
       width: 50%;
+      @media @mobile {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
+        @media @mobile {
+          margin-top: 15px;
+          width: 100%;
+        }
       }
 
       p {
         margin-bottom: 26px;
+        @media @mobile {
+          width: 100%;
+        }
       }
 
       .btn {
+        .buttoned(center, #22283A);
+        .border-btn(8px);
+        @media @mobile {
+          font-size: 2rem;
+          display: inline-block;
+          width: 100%;
+          margin: 4px 2px;
+          padding: 10px 27px;
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          background-color: @btn-bg-color;
+
+            &:hover {
+              background-color: white;
+              color: @btn-bg-color;
+            }
+        }
       }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @mobile {
+        width: 98%;
+        margin: 0 auto;
+        order: -1;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -73,3 +139,69 @@
     }
   }
 }// home
+/* contact starte here! */
+.contact {
+  margin-top: 20px;
+  @media @mobile {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    margin-top: 20px;
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+.contact p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: black;
+  @media @mobile {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+input {
+  margin: 15px 0 15px 10px;
+  padding-bottom: 10px;
+  @media @mobile {
+    width: 45%;
+    margin: 10px 10px 10px 5px;
+    padding-bottom: 0;
+  }
+}
+label {
+  font-size: 1.5rem;
+  color: black;
+}
+
+textarea {
+  width: 80%
+}
+
+input[type=submit] {
+  font-size: 2rem;
+	display: inline-block;
+  margin: 4px 2px;
+  margin-bottom: 60px;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #22283A;
+  .border-btn(8px);
+  @media @mobile {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+		&:hover {
+			background-color: white;
+		  color: #22283A;
+		}
+}
